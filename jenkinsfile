@@ -1,5 +1,5 @@
 pipeline{
-    agent any}
+    agent any
     stages{
         stage("Pre Build Actions"){
             steps{
@@ -21,3 +21,4 @@ pipeline{
                 sh 'sudo systemctl restart nginx'
             }
         }
+}
